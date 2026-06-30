@@ -7,8 +7,8 @@
 export const NEGOCIO = {
   nombre: 'Barbería Itzá',
   eslogan: 'Oficio, navaja y barrio',
-  telefono: '+52 999 123 4567',
-  whatsapp: '529991234567',
+  telefono: '+52 999 993 544',
+  whatsapp: '529999935443',
   instagram: '@barberiaitza',
   direccion: 'Calle 21 #198 x 24 y 26, García Ginerés, 97070 Mérida, Yuc.',
   horarios: [
