@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-limestone font-body antialiased;
+}
+
+/* Foco visible accesible en toda la página, respetando la paleta de marca */
+:focus-visible {
+  outline: 2px solid theme('colors.brass.DEFAULT');
+  outline-offset: 3px;
+}
+
+@layer components {
+  /* Eyebrow: etiqueta pequeña en mayúsculas que antecede a los títulos de sección */
+  .eyebrow {
+    @apply font-body text-xs tracking-widest2 uppercase text-brass font-medium;
+  }
+
+  .section-title {
+    @apply font-display text-4xl sm:text-5xl md:text-6xl font-bold uppercase tracking-tight text-limestone leading-[0.95];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-terracota hover:bg-terracota-light
+      text-limestone font-body font-semibold px-7 py-3.5 rounded-sm
+      transition-colors duration-200 ease-out;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 border border-limestone/40 hover:border-brass
+      text-limestone font-body font-semibold px-7 py-3.5 rounded-sm
+      transition-colors duration-200 ease-out;
+  }
+
+  /* Franja diagonal estilo "ficha de turno", elemento firma del diseño */
+  .ticket-divider {
+    @apply relative h-16 bg-henequen bg-ticket-stripe overflow-hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
