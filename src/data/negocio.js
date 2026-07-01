@@ -9,7 +9,7 @@ export const NEGOCIO = {
   eslogan: 'Oficio, navaja y barrio',
   telefono: '+52 999 993 5443',
   whatsapp: '529999935443',
-  instagram: '@barberiaitza',
+  instagram: '@bryan.bdz',
   direccion: 'Calle 21 #198 x 24 y 26, García Ginerés, 97070 Mérida, Yuc.',
   horarios: [
     { dia: 'Lunes a viernes', horario: '10:00 — 20:00' },
